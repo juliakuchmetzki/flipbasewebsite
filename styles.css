@@ -317,22 +317,23 @@ p {
 .marketplace-badge {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  padding: 10px 20px;
+  justify-content: center;
+  padding: 12px 26px;
   border-radius: var(--radius-pill);
   background: var(--color-surface);
   border: 1px solid var(--color-border);
-  font-weight: 700;
-  font-size: 14px;
   box-shadow: var(--shadow-sm);
   animation: float-in 0.8s ease both;
 }
 
-.marketplace-badge .dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--color-accent);
+.marketplace-logo {
+  height: 20px;
+  width: auto;
+  display: block;
+}
+
+.integration-badge .marketplace-logo {
+  height: 26px;
 }
 
 .funnel-track {
@@ -348,9 +349,54 @@ p {
   display: block;
 }
 
-.flow-dot {
-  fill: var(--color-accent);
+.flow-dot-el {
+  position: absolute;
+  top: 12px;
+  width: 9px;
+  height: 9px;
+  margin-left: -4.5px;
+  border-radius: 50%;
+  background: var(--color-accent);
+  box-shadow: 0 0 8px rgba(59, 76, 246, 0.5);
   opacity: 0;
+}
+
+.flow-dot-left {
+  left: 15%;
+  animation: flow-left 2.6s infinite ease-in-out;
+}
+
+.flow-dot-mid {
+  left: 50%;
+  animation: flow-mid 2.6s infinite ease-in-out;
+  animation-delay: 0.5s;
+}
+
+.flow-dot-right {
+  left: 85%;
+  animation: flow-right 2.6s infinite ease-in-out;
+  animation-delay: 1s;
+}
+
+@keyframes flow-left {
+  0%   { left: 15%; top: 12px; opacity: 0; }
+  8%   { opacity: 1; }
+  85%  { opacity: 1; }
+  100% { left: 50%; top: 84px; opacity: 0; }
+}
+
+@keyframes flow-mid {
+  0%   { top: 12px; opacity: 0; }
+  8%   { opacity: 1; }
+  85%  { opacity: 1; }
+  100% { top: 84px; opacity: 0; }
+}
+
+@keyframes flow-right {
+  0%   { left: 85%; top: 12px; opacity: 0; }
+  8%   { opacity: 1; }
+  85%  { opacity: 1; }
+  100% { left: 50%; top: 84px; opacity: 0; }
 }
 
 .funnel-target {
