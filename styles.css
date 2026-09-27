@@ -351,7 +351,7 @@ p {
 
 .flow-dot-el {
   position: absolute;
-  top: 12px;
+  top: 8px;
   width: 9px;
   height: 9px;
   margin-left: -4.5px;
@@ -361,8 +361,10 @@ p {
   opacity: 0;
 }
 
+/* Positions sampled along the matching SVG bezier curves (M 90 14 C 180 14, 250 70, 300 86
+   and its mirror) so the dots track the guide lines exactly instead of just dropping straight down. */
+
 .flow-dot-left {
-  left: 15%;
   animation: flow-left 2.6s infinite ease-in-out;
 }
 
@@ -373,30 +375,35 @@ p {
 }
 
 .flow-dot-right {
-  left: 85%;
   animation: flow-right 2.6s infinite ease-in-out;
   animation-delay: 1s;
 }
 
 @keyframes flow-left {
-  0%   { left: 15%; top: 12px; opacity: 0; }
-  8%   { opacity: 1; }
-  85%  { opacity: 1; }
-  100% { left: 50%; top: 84px; opacity: 0; }
+  0%   { left: 15%;    top: 8.1px;  opacity: 0; }
+  10%  { opacity: 1; }
+  25%  { left: 25.6%;  top: 16.2px; }
+  50%  { left: 35%;    top: 35.1px; }
+  75%  { left: 43.1%;  top: 56.7px; }
+  90%  { opacity: 1; }
+  100% { left: 50%;    top: 72.9px; opacity: 0; }
 }
 
 @keyframes flow-mid {
-  0%   { top: 12px; opacity: 0; }
-  8%   { opacity: 1; }
-  85%  { opacity: 1; }
-  100% { top: 84px; opacity: 0; }
+  0%   { top: 8.1px; opacity: 0; }
+  10%  { opacity: 1; }
+  90%  { opacity: 1; }
+  100% { top: 72.9px; opacity: 0; }
 }
 
 @keyframes flow-right {
-  0%   { left: 85%; top: 12px; opacity: 0; }
-  8%   { opacity: 1; }
-  85%  { opacity: 1; }
-  100% { left: 50%; top: 84px; opacity: 0; }
+  0%   { left: 85%;    top: 8.1px;  opacity: 0; }
+  10%  { opacity: 1; }
+  25%  { left: 74.4%;  top: 16.2px; }
+  50%  { left: 65%;    top: 35.1px; }
+  75%  { left: 56.9%;  top: 56.7px; }
+  90%  { opacity: 1; }
+  100% { left: 50%;    top: 72.9px; opacity: 0; }
 }
 
 .funnel-target {
