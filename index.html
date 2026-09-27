@@ -5,6 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>FlipBase – Warenwirtschaft für Reseller</title>
 <meta name="description" content="FlipBase bündelt Amazon, eBay und Kaufland in einer Warenwirtschaft: Dashboard, Lager, Retouren und Auszahlungen an einem Ort.">
+<link rel="canonical" href="https://flipbase.xyz/">
+<link rel="icon" href="assets/favicon-32.png" sizes="32x32">
+<link rel="icon" href="assets/favicon-192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="FlipBase – Warenwirtschaft für Reseller">
+<meta property="og:description" content="FlipBase bündelt Amazon, eBay und Kaufland in einer Warenwirtschaft: Dashboard, Lager, Retouren und Auszahlungen an einem Ort.">
+<meta property="og:image" content="https://flipbase.xyz/assets/og-image.png">
+<meta property="og:url" content="https://flipbase.xyz/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="FlipBase – Warenwirtschaft für Reseller">
+<meta name="twitter:description" content="FlipBase bündelt Amazon, eBay und Kaufland in einer Warenwirtschaft.">
+<meta name="twitter:image" content="https://flipbase.xyz/assets/og-image.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -15,7 +28,7 @@
 <header class="site-header">
   <div class="container">
     <a href="#top" class="logo">
-      <span class="logo-mark">FB</span>
+      <img src="assets/logo.png" alt="FlipBase Logo" class="logo-mark" style="border-radius:9px; box-shadow:none;">
       FlipBase
     </a>
     <nav class="main-nav" id="main-nav">
@@ -23,11 +36,11 @@
       <a href="#workflow">Ablauf</a>
       <a href="#dashboard">Dashboard</a>
       <a href="#platforms">Marktplätze</a>
-      <a href="#faq">FAQ</a>
+      <a href="#about">Über uns</a>
     </nav>
     <div class="header-actions">
-      <a href="#cta" class="btn btn-secondary">Demo anfragen</a>
-      <a href="#cta" class="btn btn-primary">Kostenlos testen</a>
+      <a href="kontakt.html" class="btn btn-secondary">Demo anfragen</a>
+      <a href="kontakt.html" class="btn btn-primary">Kostenlos testen</a>
       <button class="nav-toggle" id="nav-toggle" aria-label="Menü öffnen">
         <span></span><span></span><span></span>
       </button>
@@ -51,7 +64,7 @@
         Kein Excel-Chaos, kein Hin- und Herspringen zwischen Verkäufer-Cockpits – nur klare Zahlen und automatisierte Abläufe.
       </p>
       <div class="hero-ctas">
-        <a href="#cta" class="btn btn-primary">Kostenlos testen</a>
+        <a href="kontakt.html" class="btn btn-primary">Kostenlos testen</a>
         <a href="#dashboard" class="btn btn-secondary">Dashboard ansehen</a>
       </div>
       <div class="hero-note">Keine Kreditkarte nötig · Einrichtung in unter 10 Minuten</div>
@@ -83,7 +96,7 @@
           </svg>
         </div>
         <div class="funnel-target">
-          <span class="logo"><span class="logo-mark">FB</span> FlipBase</span>
+          <span class="logo"><img src="assets/logo.png" alt="FlipBase" class="logo-mark" style="border-radius:9px; box-shadow:none;"> FlipBase</span>
         </div>
       </div>
     </div>
@@ -186,6 +199,49 @@
     </div>
   </section>
 
+  <!-- PRODUCT DEMO ANIMATION -->
+  <section class="demo-section" id="demo">
+    <div class="container">
+      <div class="section-head center reveal">
+        <span class="eyebrow">So fühlt es sich an</span>
+        <h2>Ein neues Produkt anlegen – in Sekunden erledigt</h2>
+        <p>Kein Formular-Marathon: Wareneingang erfassen, Marktplatz wählen, fertig. So läuft das in FlipBase ab.</p>
+      </div>
+      <div class="demo-frame reveal">
+        <div class="browser-frame">
+          <div class="browser-bar">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="url">app.flipbase.xyz/produkte/neu</span>
+          </div>
+          <div class="demo-stage">
+            <div class="demo-slide demo-slide-1">
+              <div class="demo-card-title">Neues Produkt</div>
+              <div class="demo-field"><span>Produktname</span><div class="demo-input"></div></div>
+              <div class="demo-field"><span>Einkaufspreis</span><div class="demo-input short"></div></div>
+              <div class="demo-cursor"></div>
+            </div>
+            <div class="demo-slide demo-slide-2">
+              <div class="demo-card-title">Marktplatz wählen</div>
+              <div class="demo-choice-row">
+                <div class="demo-choice active">Kaufland</div>
+                <div class="demo-choice">eBay</div>
+                <div class="demo-choice">Amazon</div>
+              </div>
+              <div class="demo-cursor demo-cursor-2"></div>
+            </div>
+            <div class="demo-slide demo-slide-3">
+              <div class="demo-check">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none"><path d="M3 12l6 6L21 6" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </div>
+              <div class="demo-card-title">Produkt live gelistet</div>
+              <span style="font-size:13px; color:var(--color-text-subtle);">Bestand aktualisiert · Auf Kaufland sichtbar</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- DASHBOARD PREVIEW -->
   <section class="dashboard-section" id="dashboard">
     <div class="container">
@@ -198,58 +254,53 @@
       <div class="dashboard-kpis reveal">
         <div class="kpi-card">
           <div class="kpi-label">Profit</div>
-          <div class="kpi-value">4.812 €</div>
-          <div class="kpi-delta">+18 % ggü. Vormonat</div>
+          <div class="kpi-value">1.006 €</div>
+          <div class="kpi-delta neutral">Ø letzte 30 Tage</div>
         </div>
         <div class="kpi-card">
           <div class="kpi-label">Umsatz (netto)</div>
-          <div class="kpi-value">21.340 €</div>
-          <div class="kpi-delta">+9 % ggü. Vormonat</div>
+          <div class="kpi-value">5.652 €</div>
+          <div class="kpi-delta neutral">Ø letzte 30 Tage</div>
         </div>
         <div class="kpi-card">
           <div class="kpi-label">Anzahl Verkäufe</div>
-          <div class="kpi-value">386</div>
-          <div class="kpi-delta">+24 Verkäufe</div>
+          <div class="kpi-value">95</div>
+          <div class="kpi-delta neutral">letzte 30 Tage</div>
         </div>
         <div class="kpi-card">
           <div class="kpi-label">Marge</div>
-          <div class="kpi-value">22,6 %</div>
+          <div class="kpi-value">17,8 %</div>
           <div class="kpi-delta neutral">Ø letzte 30 Tage</div>
         </div>
         <div class="kpi-card">
           <div class="kpi-label">Anzahl Produkte</div>
-          <div class="kpi-value">1.204</div>
+          <div class="kpi-value">95</div>
           <div class="kpi-delta neutral">im Sortiment</div>
         </div>
         <div class="kpi-card">
           <div class="kpi-label">Einheiten im Bestand</div>
-          <div class="kpi-value">3.870</div>
+          <div class="kpi-value">447</div>
           <div class="kpi-delta neutral">über alle Lager</div>
         </div>
         <div class="kpi-card">
           <div class="kpi-label">Lagerbestand (EK gesamt)</div>
-          <div class="kpi-value">58.400 €</div>
+          <div class="kpi-value">14.755 €</div>
           <div class="kpi-delta neutral">gebundenes Kapital</div>
         </div>
         <div class="kpi-card">
           <div class="kpi-label">Ø ROI</div>
-          <div class="kpi-value">34 %</div>
-          <div class="kpi-delta">+3 Pkt. ggü. Vormonat</div>
+          <div class="kpi-value">22,4 %</div>
+          <div class="kpi-delta neutral">Ø letzte 30 Tage</div>
         </div>
       </div>
+      <p style="text-align:center; font-size:13px; color:var(--color-text-subtle); margin-top:14px;">Beispielwerte auf Basis eines echten FlipBase-Kontos, zur Veranschaulichung gerundet.</p>
 
       <div class="browser-frame reveal" style="margin-top:36px;">
         <div class="browser-bar">
           <span class="dot"></span><span class="dot"></span><span class="dot"></span>
-          <span class="url">app.flipbase.io/dashboard</span>
+          <span class="url">app.flipbase.xyz/dashboard</span>
         </div>
-        <div class="dashboard-placeholder">
-          <div class="ph-icon">
-            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="2"/><path d="M7 15l3-4 3 3 4-6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <strong>Echter Dashboard-Screenshot folgt hier</strong>
-          <span>Platzhalter – wird durch das produktive FlipBase-Dashboard ersetzt</span>
-        </div>
+        <img src="assets/dashboard-screenshot.png" alt="FlipBase Dashboard mit Profit-, Umsatz- und Bestandsübersicht" style="width:100%; display:block;">
       </div>
     </div>
   </section>
@@ -358,6 +409,37 @@
     </div>
   </section>
 
+  <!-- ABOUT -->
+  <section class="about-section" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <span class="eyebrow">Die Geschichte dahinter</span>
+          <h2>Gebaut, weil Google Sheets irgendwann nicht mehr reichte</h2>
+          <p>Früher hatte ich meine Verkäufe und meinen Warenbestand noch in Google Sheets getrackt – irgendwann war mir das zu doof, und ich habe angefangen, meine eigene App zu bauen.</p>
+          <p>Seit Januar 2026 bin ich täglich dran und arbeite daran, FlipBase besser zu machen. Mittlerweile bin ich an einem Punkt, an dem ich es jeden Tag selbst benutze, eigene Automatisierungen gebaut habe und es meinen Alltag als Reseller um ein Vielfaches erleichtert hat. Genau dieses Tool gebe ich jetzt weiter.</p>
+          <div class="about-signature">
+            <img src="assets/logo.png" alt="FlipBase" style="width:36px; height:36px; border-radius:8px;">
+            <div>
+              <strong>Johannes Kuchmetzki</strong>
+              <span>Gründer von FlipBase</span>
+            </div>
+          </div>
+        </div>
+        <div class="about-visual reveal">
+          <div class="about-stat-card">
+            <span class="stat-value" style="font-size:28px;">Seit Jan. 2026</span>
+            <span class="stat-label">in täglicher Eigennutzung im Aufbau</span>
+          </div>
+          <div class="about-stat-card">
+            <span class="stat-value" style="font-size:28px;">3 Marktplätze</span>
+            <span class="stat-label">eBay, Amazon &amp; Kaufland angebunden</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- CTA -->
   <section class="cta-section" id="cta">
     <div class="container">
@@ -365,8 +447,8 @@
         <h2>Bereit, deine Warenwirtschaft zu vereinfachen?</h2>
         <p>Verbinde deine Marktplätze, importiere deinen Bestand und sieh in wenigen Minuten dein erstes Dashboard.</p>
         <div class="hero-ctas">
-          <a href="#" class="btn btn-secondary">Kostenlos testen</a>
-          <a href="#" class="btn btn-ghost">Demo vereinbaren</a>
+          <a href="kontakt.html" class="btn btn-secondary">Kostenlos testen</a>
+          <a href="kontakt.html" class="btn btn-ghost">Demo vereinbaren</a>
         </div>
       </div>
     </div>
@@ -379,10 +461,18 @@
     <div class="footer-top">
       <div class="footer-brand">
         <a href="#top" class="logo">
-          <span class="logo-mark">FB</span>
+          <img src="assets/logo.png" alt="FlipBase Logo" class="logo-mark" style="border-radius:9px; box-shadow:none;">
           FlipBase
         </a>
         <p>Die Warenwirtschaft für Reseller, die auf Amazon, eBay und Kaufland verkaufen. Ein Dashboard für Lager, Verkäufe und Retouren.</p>
+        <div class="social-row">
+          <a href="https://www.instagram.com/flipbasede/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/></svg>
+          </a>
+          <a href="https://x.com/FlipBasede" target="_blank" rel="noopener" aria-label="X (Twitter)">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 4l16 16M20 4L4 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </a>
+        </div>
       </div>
       <div class="footer-links">
         <div class="footer-col">
@@ -393,13 +483,13 @@
         </div>
         <div class="footer-col">
           <h4>Unternehmen</h4>
-          <a href="#">Über uns</a>
-          <a href="#">Kontakt</a>
+          <a href="#about">Über uns</a>
+          <a href="kontakt.html">Kontakt</a>
         </div>
         <div class="footer-col">
           <h4>Rechtliches</h4>
-          <a href="#">Impressum</a>
-          <a href="#">Datenschutz</a>
+          <a href="impressum.html">Impressum</a>
+          <a href="datenschutz.html">Datenschutz</a>
         </div>
       </div>
     </div>
