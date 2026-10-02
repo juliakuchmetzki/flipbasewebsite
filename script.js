@@ -1,3 +1,14 @@
+// Floating pill nav: shrink + blur once the page has scrolled
+const siteHeader = document.getElementById('site-header');
+
+if (siteHeader) {
+  const updateHeaderState = () => {
+    siteHeader.classList.toggle('scrolled', window.scrollY > 24);
+  };
+  updateHeaderState();
+  window.addEventListener('scroll', updateHeaderState, { passive: true });
+}
+
 // Mobile nav toggle
 const navToggle = document.getElementById('nav-toggle');
 const mainNav = document.getElementById('main-nav');

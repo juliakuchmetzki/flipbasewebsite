@@ -3,15 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Impressum – FlipBase</title>
+<title>Impressum: FlipBase</title>
 <meta name="robots" content="noindex">
 <link rel="icon" href="assets/favicon-32.png" sizes="32x32">
 <link rel="icon" href="assets/favicon-192.png" sizes="192x192">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="assets/fonts/fonts.css?v=1">
+<link rel="stylesheet" href="styles.css?v=3">
 <style>
   .legal-content { padding: 140px 0 100px; max-width: 720px; margin: 0 auto; }
   .legal-content h1 { font-size: 32px; margin-bottom: 32px; }
@@ -21,14 +19,16 @@
 </style>
 </head>
 <body>
-<header class="site-header">
+<header class="site-header" id="site-header">
   <div class="container">
-    <a href="index.html" class="logo">
-      <img src="assets/logo.png" alt="FlipBase Logo" class="logo-mark" style="border-radius:9px; box-shadow:none;">
-      FlipBase
-    </a>
-    <div class="header-actions">
-      <a href="index.html" class="btn btn-secondary">Zurück zur Startseite</a>
+    <div class="nav-pill">
+      <a href="index.html" class="logo">
+        <img src="assets/logo.png" alt="FlipBase Logo" class="logo-mark" style="border-radius:9px; box-shadow:none;">
+        FlipBase
+      </a>
+      <div class="header-actions">
+        <a href="index.html" class="btn btn-secondary">Zurück zur Startseite</a>
+      </div>
     </div>
   </div>
 </header>
@@ -69,5 +69,6 @@
     </div>
   </div>
 </footer>
+<script src="script.js?v=3"></script>
 </body>
 </html>

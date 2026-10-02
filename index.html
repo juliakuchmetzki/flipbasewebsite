@@ -3,47 +3,47 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FlipBase – Warenwirtschaft für Reseller</title>
+<title>FlipBase: Warenwirtschaft für Reseller</title>
 <meta name="description" content="FlipBase bündelt eBay, Kaufland und Amazon in einer Warenwirtschaft: Dashboard, Lager, Retouren und Auszahlungen an einem Ort.">
 <link rel="canonical" href="https://flipbase.xyz/">
 <link rel="icon" href="assets/favicon-32.png" sizes="32x32">
 <link rel="icon" href="assets/favicon-192.png" sizes="192x192">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <meta property="og:type" content="website">
-<meta property="og:title" content="FlipBase – Warenwirtschaft für Reseller">
+<meta property="og:title" content="FlipBase: Warenwirtschaft für Reseller">
 <meta property="og:description" content="FlipBase bündelt eBay, Kaufland und Amazon in einer Warenwirtschaft: Dashboard, Lager, Retouren und Auszahlungen an einem Ort.">
 <meta property="og:image" content="https://flipbase.xyz/assets/og-image.png">
 <meta property="og:url" content="https://flipbase.xyz/">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="FlipBase – Warenwirtschaft für Reseller">
+<meta name="twitter:title" content="FlipBase: Warenwirtschaft für Reseller">
 <meta name="twitter:description" content="FlipBase bündelt eBay, Kaufland und Amazon in einer Warenwirtschaft.">
 <meta name="twitter:image" content="https://flipbase.xyz/assets/og-image.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="assets/fonts/fonts.css?v=1">
+<link rel="stylesheet" href="styles.css?v=3">
 </head>
 <body>
 
-<header class="site-header">
+<header class="site-header" id="site-header">
   <div class="container">
-    <a href="#top" class="logo">
-      <img src="assets/logo.png" alt="FlipBase Logo" class="logo-mark" style="border-radius:9px; box-shadow:none;">
-      FlipBase
-    </a>
-    <nav class="main-nav" id="main-nav">
-      <a href="#features">Funktionen</a>
-      <a href="#workflow">Ablauf</a>
-      <a href="#dashboard">Dashboard</a>
-      <a href="#platforms">Marktplätze</a>
-      <a href="#about">Über uns</a>
-    </nav>
-    <div class="header-actions">
-      <a href="kontakt.html" class="btn btn-secondary">Demo anfragen</a>
-      <a href="kontakt.html" class="btn btn-primary">Kostenlos testen</a>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Menü öffnen">
-        <span></span><span></span><span></span>
-      </button>
+    <div class="nav-pill">
+      <a href="#top" class="logo">
+        <img src="assets/logo.png" alt="FlipBase Logo" class="logo-mark" style="border-radius:9px; box-shadow:none;">
+        FlipBase
+      </a>
+      <nav class="main-nav" id="main-nav">
+        <a href="#features">Funktionen</a>
+        <a href="#workflow">Ablauf</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#platforms">Marktplätze</a>
+        <a href="#about">Über uns</a>
+      </nav>
+      <div class="header-actions">
+        <a href="kontakt.html" class="btn btn-secondary">Demo anfragen</a>
+        <a href="kontakt.html" class="btn btn-primary">Kostenlos testen</a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Menü öffnen">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </div>
 </header>
@@ -58,10 +58,10 @@
         <span class="pill"><strong>Für</strong> Arbitrage-Händler</span>
         <span class="pill"><strong>Für</strong> Online-Händler</span>
       </div>
-      <h1>Deine Warenwirtschaft für <span class="accent">eBay, Kaufland und Amazon</span> – an einem Ort</h1>
+      <h1>Deine Warenwirtschaft für eBay, Kaufland und Amazon, <span class="accent-script">ganz einfach</span>.</h1>
       <p class="hero-sub">
         FlipBase führt Lager, Bestellungen, Verkäufe und Retouren aus all deinen Marktplätzen in einem Dashboard zusammen.
-        Kein Excel-Chaos, kein Hin- und Herspringen zwischen Verkäufer-Cockpits – nur klare Zahlen und automatisierte Abläufe.
+        Kein Excel-Chaos, kein Hin- und Herspringen zwischen Verkäufer-Cockpits. Nur klare Zahlen und automatisierte Abläufe.
       </p>
       <div class="hero-ctas">
         <a href="kontakt.html" class="btn btn-primary">Kostenlos testen</a>
@@ -97,74 +97,84 @@
   <section class="features" id="features">
     <div class="container">
       <div class="section-head center reveal">
+        <div class="section-divider"></div>
         <span class="eyebrow">Was du damit machen kannst</span>
         <h2>Alles, was du für dein Tagesgeschäft brauchst</h2>
-        <p>FlipBase ersetzt keine Marktplätze – es macht das Arbeiten mit ihnen erst erträglich. Jede Funktion ist so gebaut, dass sie dir Klicks und Kopfrechnen abnimmt.</p>
+        <p>FlipBase ersetzt keine Marktplätze. Es macht das Arbeiten mit ihnen erst erträglich, jede Funktion nimmt dir Klicks und Kopfrechnen ab.</p>
       </div>
 
-      <div class="feature-grid">
-        <div class="feature-card reveal">
-          <div class="feature-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 12l6 6L21 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <div class="feature-list">
+        <div class="feature-list-item reveal">
+          <div class="feature-item-head">
+            <span class="feature-icon-inline"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 13a8 8 0 0116 0" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M12 13l4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="13" r="1.3" fill="currentColor"/></svg></span>
+            <h3>Live-Dashboard</h3>
           </div>
-          <h3>Live-Dashboard</h3>
-          <p>Profit, Umsatz, Marge, Ø ROI und Lagerbestand auf einen Blick – wählbar nach Heute, 7 Tagen, 30 Tagen, Monat, Quartal oder Jahr.</p>
+          <div class="feature-item-body">
+            <p>Profit, Umsatz, Marge, Ø ROI und Lagerbestand auf einen Blick, wählbar nach Heute, 7 Tagen, 30 Tagen, Monat, Quartal oder Jahr.</p>
+          </div>
         </div>
-        <div class="feature-card reveal">
-          <div class="feature-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 19V5m6 14V9m6 10V13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <div class="feature-list-item reveal">
+          <div class="feature-item-head">
+            <span class="feature-icon-inline"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M9 3v18M3 9h18M3 15h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="9" cy="9" r="0.5" fill="currentColor"/></svg></span>
+            <h3>KI-gestützter Direkt-Upload</h3>
           </div>
-          <h3>Umsatz- &amp; Profit-Charts</h3>
-          <p>Verlaufskurven statt Bauchgefühl: Sieh sofort, ob Umsatz und Profit wachsen – über Tage, Wochen oder Monate hinweg.</p>
+          <div class="feature-item-body">
+            <p>Neues Produkt fotografieren, kurz beschreiben. FlipBase erstellt daraus mit KI ein fertiges Listing und lädt es mit wenigen Klicks direkt bei eBay und Kaufland hoch. Kein Ausfüllen von Marktplatz-Formularen mehr.</p>
+          </div>
         </div>
-        <div class="feature-card reveal">
-          <div class="feature-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="feature-list-item reveal">
+          <div class="feature-item-head">
+            <span class="feature-icon-inline"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+            <h3>Preis-Scraping</h3>
           </div>
-          <h3>Zentrales Lager</h3>
-          <p>Ein Warenbestand für alle Marktplätze statt verstreuter Zahlen in fünf Verkäufer-Cockpits. Einheiten, Bestandswert und Ø EK immer aktuell.</p>
+          <div class="feature-item-body">
+            <p>FlipBase behält die aktuellen Preise deiner Produkte auf den Marktplätzen im Blick, damit du immer weißt, ob du noch wettbewerbsfähig bist, ohne selbst jeden Artikel einzeln nachzuschauen.</p>
+          </div>
         </div>
-        <div class="feature-card reveal">
-          <div class="feature-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M9 3v18M3 9h18M3 15h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="9" cy="9" r="0.5" fill="currentColor"/></svg>
+        <div class="feature-list-item reveal">
+          <div class="feature-item-head">
+            <span class="feature-icon-inline"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="4" y="3" width="16" height="18" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 8h8M8 12h8M8 16h5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+            <h3>Automatischer Bestellimport</h3>
           </div>
-          <h3>KI-gestützter Direkt-Upload</h3>
-          <p>Neues Produkt fotografieren, kurz beschreiben – FlipBase erstellt daraus mit KI ein fertiges Listing und lädt es mit wenigen Klicks direkt bei eBay und Kaufland hoch. Kein Ausfüllen von Marktplatz-Formularen mehr.</p>
+          <div class="feature-item-body">
+            <p>Jede Bestellung landet automatisch in FlipBase, mit Produktbild, Bestellnummer und allen technischen Details. Du legst nichts manuell an und weißt trotzdem sofort, wie viel Profit du pro Verkauf gemacht hast.</p>
+          </div>
         </div>
-        <div class="feature-card reveal">
-          <div class="feature-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"/><path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <div class="feature-list-item reveal">
+          <div class="feature-item-head">
+            <span class="feature-icon-inline"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 3h18v4H3zM3 10h18M3 17h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="7" cy="10" r="1.5" fill="currentColor"/><circle cx="7" cy="17" r="1.5" fill="currentColor"/></svg></span>
+            <h3>Bestellübersicht &amp; Tracking</h3>
           </div>
-          <h3>Preis-Scraping</h3>
-          <p>FlipBase behält die aktuellen Preise deiner Produkte auf den Marktplätzen im Blick, damit du immer weißt, ob du noch wettbewerbsfähig bist – ohne selbst jeden Artikel einzeln nachzuschauen.</p>
+          <div class="feature-item-body">
+            <p>Auf einen Blick sehen, wo jede Bestellung gerade steht, in Bearbeitung, versendet oder zugestellt. Kein Nachschauen mehr in fünf verschiedenen Verkäufer-Cockpits.</p>
+          </div>
         </div>
-        <div class="feature-card reveal">
-          <div class="feature-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="4" y="3" width="16" height="18" rx="2" stroke="currentColor" stroke-width="2"/><path d="M8 8h8M8 12h8M8 16h5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <div class="feature-list-item reveal">
+          <div class="feature-item-head">
+            <span class="feature-icon-inline"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M17 2l4 4-4 4M3 12h18M7 22l-4-4 4-4M21 12H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <h3>Automatische Retouren</h3>
           </div>
-          <h3>Automatischer Bestellimport</h3>
-          <p>Jede Bestellung landet automatisch in FlipBase – mit Produktbild, Bestellnummer und allen technischen Details. Du legst nichts manuell an und weißt trotzdem sofort, wie viel Profit du pro Verkauf gemacht hast.</p>
+          <div class="feature-item-body">
+            <p>Kommt eine Retoure zurück, listet FlipBase das Produkt automatisch neu, ohne dass du es manuell wieder online stellst.</p>
+          </div>
         </div>
-        <div class="feature-card reveal">
-          <div class="feature-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M3 3h18v4H3zM3 10h18M3 17h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="7" cy="10" r="1.5" fill="currentColor"/><circle cx="7" cy="17" r="1.5" fill="currentColor"/></svg>
+        <div class="feature-list-item reveal">
+          <div class="feature-item-head">
+            <span class="feature-icon-inline"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <h3>Zentrales Lager</h3>
           </div>
-          <h3>Bestellübersicht &amp; Tracking</h3>
-          <p>Auf einen Blick sehen, wo jede Bestellung gerade steht – in Bearbeitung, versendet oder zugestellt. Kein Nachschauen mehr in fünf verschiedenen Verkäufer-Cockpits.</p>
+          <div class="feature-item-body">
+            <p>Ein Warenbestand für alle Marktplätze statt verstreuter Zahlen in fünf Verkäufer-Cockpits. Einheiten, Bestandswert und Ø EK immer aktuell.</p>
+          </div>
         </div>
-        <div class="feature-card reveal">
-          <div class="feature-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M17 2l4 4-4 4M3 12h18M7 22l-4-4 4-4M21 12H3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="feature-list-item reveal">
+          <div class="feature-item-head">
+            <span class="feature-icon-inline"><svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M3 9h18M8 4v5" stroke="currentColor" stroke-width="2"/></svg></span>
+            <h3>Offene Aufgaben zentral</h3>
           </div>
-          <h3>Automatische Retouren</h3>
-          <p>Kommt eine Retoure zurück, listet FlipBase das Produkt automatisch neu – ohne dass du es manuell wieder online stellst.</p>
-        </div>
-        <div class="feature-card reveal">
-          <div class="feature-icon">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="16" rx="2" stroke="currentColor" stroke-width="2"/><path d="M3 9h18M8 4v5" stroke="currentColor" stroke-width="2"/></svg>
+          <div class="feature-item-body">
+            <p>Bestellungen, Rücksendungen, offene Fälle und Retouren, alles gebündelt, statt in jeder Marktplatz-App einzeln zu suchen.</p>
           </div>
-          <h3>Offene Aufgaben zentral</h3>
-          <p>Bestellungen, Rücksendungen, offene Fälle und Retouren – alles gebündelt, statt in jeder Marktplatz-App einzeln zu suchen.</p>
         </div>
       </div>
     </div>
@@ -174,8 +184,9 @@
   <section class="steps" id="workflow">
     <div class="container">
       <div class="section-head center reveal">
+        <div class="section-divider"></div>
         <span class="eyebrow">So läuft dein Alltag</span>
-        <h2>Vom Verkauf bis zur Auszahlung – automatisch nachvollzogen</h2>
+        <h2>Vom Verkauf bis zur Auszahlung, automatisch nachvollzogen</h2>
         <p>Du musst nicht mehr zwischen Tabs wechseln, um zu verstehen, was gerade mit deinem Geld passiert.</p>
       </div>
       <div class="steps-list">
@@ -183,14 +194,14 @@
           <div class="step-number">1</div>
           <div class="step-body">
             <h3>Kunde kauft auf eBay, Kaufland oder Amazon</h3>
-            <p>Egal welcher Marktplatz – die Bestellung läuft automatisch in FlipBase ein, inklusive Artikelbild, Bestellnummer, Preis und allen weiteren technischen Angaben. Du musst nichts mehr händisch abtippen.</p>
+            <p>Egal welcher Marktplatz, die Bestellung läuft automatisch in FlipBase ein, inklusive Artikelbild, Bestellnummer, Preis und allen weiteren technischen Angaben. Du musst nichts mehr händisch abtippen.</p>
           </div>
         </div>
         <div class="step-item reveal">
           <div class="step-number">2</div>
           <div class="step-body">
             <h3>FlipBase erfasst Verkauf, Gebühren und Marge automatisch</h3>
-            <p>Verkaufspreis, Einkaufspreis und Plattformgebühren werden verrechnet – dein Profit pro Verkauf steht sofort fest.</p>
+            <p>Verkaufspreis, Einkaufspreis und Plattformgebühren werden verrechnet, dein Profit pro Verkauf steht sofort fest.</p>
           </div>
         </div>
         <div class="step-item reveal">
@@ -215,8 +226,9 @@
   <section class="demo-section" id="demo">
     <div class="container">
       <div class="section-head center reveal">
+        <div class="section-divider"></div>
         <span class="eyebrow">So fühlt es sich an</span>
-        <h2>Ein neues Produkt anlegen – mit KI in Sekunden erledigt</h2>
+        <h2>Ein neues Produkt anlegen, mit KI in Sekunden erledigt</h2>
         <p>Kein Formular-Marathon: Wareneingang erfassen, Marktplatz wählen, fertig gelistet. FlipBase übernimmt mit KI-Unterstützung den Rest.</p>
       </div>
       <div class="demo-frame reveal">
@@ -258,9 +270,10 @@
   <section class="dashboard-section" id="dashboard">
     <div class="container">
       <div class="section-head center reveal">
+        <div class="section-divider"></div>
         <span class="eyebrow">Dein Dashboard</span>
         <h2>Alle Kennzahlen, die für Reseller zählen</h2>
-        <p>Beispielwerte für einen 30-Tage-Zeitraum – so sieht dein Tagesgeschäft in FlipBase aus.</p>
+        <p>Beispielwerte für einen 30-Tage-Zeitraum, so sieht dein Tagesgeschäft in FlipBase aus.</p>
       </div>
 
       <div class="dashboard-kpis reveal">
@@ -321,9 +334,10 @@
   <section class="platform-section" id="platforms">
     <div class="container">
       <div class="section-head center reveal">
+        <div class="section-divider"></div>
         <span class="eyebrow">Nach Plattform aufgeschlüsselt</span>
         <h2>Wissen, welcher Marktplatz dich wirklich trägt</h2>
-        <p>Statt eines großen Gesamtumsatzes zeigt dir FlipBase, was jede Plattform tatsächlich beiträgt – Beispieldaten für 30 Tage.</p>
+        <p>Statt eines großen Gesamtumsatzes zeigt dir FlipBase, was jede Plattform tatsächlich beiträgt. Beispieldaten für 30 Tage.</p>
       </div>
 
       <div class="platform-grid">
@@ -349,30 +363,30 @@
 
         <div class="side-list">
           <div class="side-item reveal">
-            <div class="feature-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M20 12H4m0 0l6-6m-6 6l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <div>
+            <div class="side-item-head">
+              <span class="feature-icon-inline"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M20 12H4m0 0l6-6m-6 6l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
               <h4>Offene Verkäufe im Blick</h4>
-              <p>Bezahlt, aber noch nicht versendet – aufgeschlüsselt nach Marktplatz, damit nichts liegen bleibt.</p>
+            </div>
+            <div class="side-item-body">
+              <p>Bezahlt, aber noch nicht versendet, aufgeschlüsselt nach Marktplatz, damit nichts liegen bleibt.</p>
             </div>
           </div>
           <div class="side-item reveal">
-            <div class="feature-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/></svg>
-            </div>
-            <div>
+            <div class="side-item-head">
+              <span class="feature-icon-inline"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 8v4l3 3" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2"/></svg></span>
               <h4>Offene Fälle &amp; Rücksendungen</h4>
-              <p>Marktplatz-Fälle und Retouren an einem Ort – keine vergessenen Fristen mehr.</p>
+            </div>
+            <div class="side-item-body">
+              <p>Marktplatz-Fälle und Retouren an einem Ort, keine vergessenen Fristen mehr.</p>
             </div>
           </div>
           <div class="side-item reveal">
-            <div class="feature-icon">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-            </div>
-            <div>
+            <div class="side-item-head">
+              <span class="feature-icon-inline"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
               <h4>Beispiel: 34 offene Bestellungen</h4>
-              <p>12 Rücksendungen, 5 offene Fälle, 17 unversendete Kaufland-Verkäufe – alles priorisiert sortiert.</p>
+            </div>
+            <div class="side-item-body">
+              <p>12 Rücksendungen, 5 offene Fälle, 17 unversendete Kaufland-Verkäufe, alles priorisiert sortiert.</p>
             </div>
           </div>
         </div>
@@ -408,6 +422,7 @@
   <section class="integrations">
     <div class="container">
       <div class="section-head center reveal">
+        <div class="section-divider"></div>
         <span class="eyebrow">Marktplatz-Integrationen</span>
         <h2>Läuft mit den Plattformen, auf denen du schon verkaufst</h2>
       </div>
@@ -426,7 +441,7 @@
         <div class="about-text reveal">
           <span class="eyebrow">Die Geschichte dahinter</span>
           <h2>Gebaut, weil Google Sheets irgendwann nicht mehr reichte</h2>
-          <p>Früher hatte ich meine Verkäufe und meinen Warenbestand noch in Google Sheets getrackt – irgendwann war mir das zu doof, und ich habe angefangen, meine eigene App zu bauen.</p>
+          <p>Früher hatte ich meine Verkäufe und meinen Warenbestand noch in Google Sheets getrackt, irgendwann war mir das zu doof, und ich habe angefangen, meine eigene App zu bauen.</p>
           <p>Seit Januar 2026 bin ich täglich dran und arbeite daran, FlipBase besser zu machen. Mittlerweile bin ich an einem Punkt, an dem ich es jeden Tag selbst benutze, eigene Automatisierungen gebaut habe und es meinen Alltag als Reseller um ein Vielfaches erleichtert hat. Genau dieses Tool gebe ich jetzt weiter.</p>
           <div class="about-signature">
             <img src="assets/logo.png" alt="FlipBase" style="width:36px; height:36px; border-radius:8px;">
@@ -510,6 +525,6 @@
   </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="script.js?v=3"></script>
 </body>
 </html>
